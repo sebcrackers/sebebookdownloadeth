@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>My eBook</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body oncontextmenu="return false" oncopy="return false" oncut="return false" onselectstart="return false">
+  <div class="watermark" id="watermark"></div>
+  <div class="ebook-content" id="ebookContent">
+    Loading...
+  </div>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("keydown", function (e) {
+      if ((e.ctrlKey || e.metaKey) && (e.key === "c" || e.key === "x" || e.key === "a")) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+
+</html>

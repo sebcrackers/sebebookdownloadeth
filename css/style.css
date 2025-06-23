@@ -1,0 +1,63 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+  user-select: none;
+}
+
+.login-box,
+.payment-box {
+  max-width: 300px;
+  margin: 100px auto;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box input,
+.payment-box input,
+.payment-box textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.success-text {
+  color: green;
+}
+
+.ebook-content {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+.watermark {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.05);
+  z-index: 999;
+  pointer-events: none;
+}
